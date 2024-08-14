@@ -1,0 +1,180 @@
+.homeContainer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  background-image: url(../assets/backgroundImage.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.greetingContainer{
+  max-width: 750px;
+  margin-left: 200px;
+}
+.greeting{
+  color: rgb(186, 192, 201);
+  font-size: 22px;
+  margin: 10px 0;
+}
+.name{
+  font-size: 52px;
+  color: #fff;
+  margin: 10px 0;
+  font-family: 'Merriweather', serif;
+}
+.intro{
+  color: #1e90ff;
+  font-size: 30px;
+  margin: 15px 0;
+  font-family: 'Merriweather', serif;
+}
+
+@media (max-width: 1800px){
+  .greetingContainer{
+    max-width: 680px;
+    margin-left: 200px;
+    }
+    .greeting{
+      font-size: 22px;
+    }
+    .name{
+      font-size: 46px;
+    }
+    .intro{
+      font-size: 28px;
+    }
+}
+
+@media (max-width: 1680px){
+  .greetingContainer{
+    max-width: 670px;
+    margin-left: 150px;
+    }
+    .greeting{
+      font-size: 20px;
+    }
+    .name{
+      font-size: 45px;
+    }
+    .intro{
+      font-size: 27px;
+    }
+}
+
+@media (max-width: 1560px){
+  .greetingContainer{
+  max-width: 650px;
+  margin-left: 100px;
+  }
+  .greeting{
+    font-size: 20px;
+  }
+  .name{
+    font-size: 42px;
+  }
+  .intro{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1380px){
+  .greetingContainer{
+    max-width: 600px;
+    margin-left: 100px;
+    }
+    .greeting{
+      font-size: 18px;
+    }
+    .name{
+      font-size: 40px;
+    }
+    .intro{
+      font-size: 22px;
+    }
+}
+
+@media (max-width: 1230px){
+  .greetingContainer{
+    max-width: 500px;
+    margin-left: 100px;
+    }
+    .greeting{
+      font-size: 18px;
+    }
+    .name{
+      font-size: 40px;
+    }
+    .intro{
+      font-size: 22px;
+    }
+}
+
+@media (max-width: 1145px){
+  .greetingContainer{
+    max-width: 600px;
+    margin-left: 70px;
+    }
+    .greeting{
+      font-size: 16px;
+    }
+    .name{
+      font-size: 34px;
+    }
+    .intro{
+      font-size: 22px;
+    }
+}
+@media (max-width: 1024px){
+  .greetingContainer{
+    max-width: 550px;
+    margin-left: 70px;
+    }
+    .greeting{
+      font-size: 16px;
+    }
+    .name{
+      font-size: 30px;
+    }
+    .intro{
+      font-size: 18px;
+    }
+}
+
+@media (max-width: 768px){
+  .homeContainer{
+    background-image: url(../assets/backgroundImagePhone.jpg);
+  }
+  .greetingContainer{
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 300px;
+  }
+  .greeting{
+    font-size: 20px;
+  }
+  .name{
+    font-size: 42px;
+  }
+  .intro{
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 425px){
+  .greetingContainer{
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 300px;
+  }
+  .greeting{
+    font-size: 18px;
+  }
+  .name{
+    font-size: 36px;
+  }
+  .intro{
+    font-size: 20px;
+  }
+}
+
+

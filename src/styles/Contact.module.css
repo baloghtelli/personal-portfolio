@@ -1,0 +1,195 @@
+.contactContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+.contactTitle{
+  font-size: 52px;
+  font-weight: 600;
+  color: #1e90ff;
+  font-family: 'Merriweather', serif;
+  margin-top: 0;
+}
+.mailContainer{
+  margin-bottom: 20px;
+}
+.linkedInContainer{
+  margin-top: 20px;
+}
+.paperPlaneIcon,
+.phoneIcon{
+  font-size: 24px;
+  margin-right: 15px;
+  color: #1e90ff;
+}
+.linkedinIcon{
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  color: #1e90ff;
+}
+.emailLink,
+.linkedinLink{
+  color: #fff;
+  font-size: 18px;
+}
+.phoneNumber{
+  font-size: 18px;
+  display: inline-block;
+}
+.cvButton{
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 80px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+.cvButton:hover{
+  background-color: #3176ba;
+}
+.downloadIcon{
+  font-size: 18px;
+  margin-left: 10px;
+}
+.rightContact{
+  width: 60%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.nameInput,
+.mailInput,
+.messageInput{
+  padding: 10px 15px;
+  background-color: rgb(75, 75, 75);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.nameInput::placeholder,
+.mailInput::placeholder,
+.messageInput::placeholder{
+  color: #fff;
+  opacity: 0.8;
+  font-family: 'Montserrat', sans-serif;
+}
+.messageInput{
+  resize: vertical;
+  min-height: 130px;
+}
+.nameInput:focus,
+.mailInput:focus,
+.messageInput:focus{
+  background-color: #fff;
+  color: #000;
+  border: none;
+  outline: none;
+}
+.nameInput:focus::placeholder,
+.mailInput:focus::placeholder,
+.messageInput:focus::placeholder {
+  color: #000000; 
+  opacity: 0.8;
+}
+.submitButton{
+  width: 20%;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.submitButton:hover{
+  background-color: #3176ba;
+}
+.message{
+  color: #1e90ff;
+  font-size: 18px;
+}
+
+@media (max-width: 1440px){
+  .contactContainer{
+    max-width: 1200px;
+  }
+  .cvButton{
+    margin-top: 90px;
+  }
+  .submitButton{
+    margin-top: 20px;
+  } 
+}
+
+@media (max-width: 1240px){
+  .contactContainer{
+    max-width: 1000px;
+  }
+  .emailLink,
+  .linkedinLink,
+  .phoneNumber{
+  font-size: 16px;
+  }
+  .cvButton{
+  margin-top: 100px;
+  }
+}
+
+@media (max-width: 1024px){
+  .contactContainer{
+    max-width: 900px;
+  }
+  .emailLink,
+  .linkedinLink{
+  font-size: 16px;
+  }
+  .submitButton{
+  width: 25%;
+  margin-top: 40px;
+} 
+}
+
+@media (max-width: 768px){
+  .contactContainer{
+    max-width: 700px;
+    flex-direction: column;
+  }
+  .leftContact,
+  .rightContact{
+    width: 100%;
+    text-align: center;
+  }
+  .cvButton{
+    margin: 50px 0;
+  }
+  .submitButton{
+    margin-top: 10px;
+  } 
+}
+
+@media (max-width: 425px){
+  .contactContainer{
+    max-width: 375px;
+  }
+  .contactTitle{
+    font-size: 42px;
+  }
+  .submitButton{
+    margin-top: 10px;
+    width: 30%;
+  } 
+}

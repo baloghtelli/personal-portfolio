@@ -1,0 +1,239 @@
+.aboutContainer{
+  padding: 80px 0;
+}
+.contentWrapper{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.imageContainer {
+  flex-basis: 35%;
+}
+.imageContainer img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: -5px 0px 20px rgba(120, 120, 163, 0.7),
+  -5px 5px 20px rgba(15, 15, 60, 0.7),
+  5px 0px 20px rgba(120, 120, 163, 0.7),
+  5px 5px 20px rgba(15, 15, 60, 0.7);
+}
+.textContainer {
+  flex-basis: 60%;
+}
+.aboutTitle{
+  margin: 0;
+  font-size: 52px;
+  font-weight: 600;
+  color: #1e90ff;
+  font-family: 'Merriweather', serif;
+}
+.aboutText{
+  line-height: 1.5;
+}
+.tabNav{
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tabLink{
+  position: relative;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.tabLink::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #1e90ff;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.activeTabLink::after {
+  width: 100%;
+}
+.tabContent{
+  display: none;
+}
+.activeTabContent{
+  display: block;
+}
+.skillsList,
+.educationList,
+.certificatesList{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+.skillsList li{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.5px;
+}
+.htmlLogo,
+.cssLogo,
+.scriptLogo,
+.reactLogo,
+.figmaLogo{
+  font-size: 40px;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+}
+.htmlLogo{
+  color: #E44B20;
+}
+.cssLogo{
+  color: #204BE4;
+}
+.scriptLogo{
+  color: #E8D44D;
+}
+.reactLogo{
+  color: #58C4DC;
+}
+.educationList li,
+.certificatesList li{
+  margin-bottom: 20px;
+}
+.educationList li span,
+.certificatesList li span{
+  color: #1e90ff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 1440px){
+  .contentWrapper{
+    max-width: 1200px;
+  }
+  .tabLink{
+    font-size: 16px;
+  }
+  .htmlLogo,
+  .cssLogo,
+  .scriptLogo,
+  .reactLogo,
+  .figmaLogo{
+  font-size: 35px;
+  margin-right: 20px;
+  height: 35px;
+  width: 35px;
+}
+}
+
+@media (max-width: 1240px){
+  .contentWrapper{
+    max-width: 1000px;
+  }
+  .aboutTitle{
+    font-size: 42px;
+  }
+  .tabLink{
+    font-size: 16px;
+  }
+  .aboutText{
+    font-size: 14px;
+  }
+  .skillsList li,
+  .educationList li,
+  .certificatesList li{
+    font-size: 14px;
+  }
+  .htmlLogo,
+  .cssLogo,
+  .scriptLogo,
+  .reactLogo,
+  .figmaLogo{
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+  }
+  .tabNav{
+  margin: 20px 0;
+  }
+}
+
+@media (max-width: 1024px){
+  .contentWrapper{
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px){
+  .contentWrapper{
+    max-width: 700px;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .textContainer {
+    flex-basis: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .imageContainer {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    order: 2;
+  }
+  .imageContainer img {
+    width: 50%; 
+  }
+  .aboutTitle {
+    font-size: 52px; 
+    margin-bottom: 20px; 
+  }
+  .aboutText {
+    margin-bottom: 30px; 
+  }
+  .tabNav {
+    justify-content: center;
+    gap: 50px;
+  }
+  .tabLink{
+    margin-right: 0px;
+    flex: 1;
+  }
+  .skillsList li{
+    display: flex;
+    flex-direction: column;
+  }
+  .skillsList, 
+  .educationList, 
+  .certificatesList {
+    align-items: center;
+  }
+  .skillsList li, 
+  .educationList li, 
+  .certificatesList li {
+    text-align: center;
+  }
+  .htmlLogo, 
+  .cssLogo, 
+  .scriptLogo, 
+  .reactLogo, 
+  .figmaLogo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px){
+  .contentWrapper{
+    max-width: 375px;
+  }
+  .aboutTitle {
+    font-size: 42px; 
+  }
+}
