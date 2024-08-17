@@ -150,10 +150,15 @@
   .nav{
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
   }
   .nav a{
     margin: 20px 0;
     font-size: 24px;
+  }
+  .logoContainer{
+    max-width: 70px;
+    max-height: 70px;
   }
   .socialLinks{
     flex-direction: row;

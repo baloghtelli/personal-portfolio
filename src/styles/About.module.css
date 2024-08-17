@@ -237,3 +237,9 @@
     font-size: 42px; 
   }
 }
+
+@media (max-width: 375px){
+  .contentWrapper{
+    max-width: 340px;
+  }
+}
